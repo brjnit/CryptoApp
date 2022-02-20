@@ -1,14 +1,13 @@
 //
-//  CryptoAppTests.swift
+//  MarketUsecaseTests.swift
 //  CryptoAppTests
 //
-//  Created by Brajesh Kumar on 19/02/22.
+//  Created by Brajesh Kumar on 20/02/22.
 //
 
 import XCTest
-@testable import CryptoApp
 
-class CryptoAppTests: XCTestCase {
+class MarketUsecaseTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CryptoTableViewCell" customModule="CryptoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="616" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQD-8K-fhu">
+                    <rect key="frame" x="8" y="0.0" width="12" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="VOY-Le-dyc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swv-zc-ols">
+                    <rect key="frame" x="476" y="0.0" width="64" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="RYG-BN-8gN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-2g-F47">
+                    <rect key="frame" x="24" y="0.0" width="448" height="145"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="And-tb-6DK">
+                    <rect key="frame" x="544" y="0.0" width="64" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="AAl-1g-EfP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="And-tb-6DK" firstAttribute="leading" secondItem="swv-zc-ols" secondAttribute="trailing" constant="4" id="2n0-2k-Qt5"/>
+                <constraint firstItem="swv-zc-ols" firstAttribute="leading" secondItem="wd8-2g-F47" secondAttribute="trailing" constant="4" id="2sA-bc-2aH"/>
+                <constraint firstItem="BQD-8K-fhu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="4Td-H8-uE5"/>
+                <constraint firstItem="swv-zc-ols" firstAttribute="bottom" secondItem="And-tb-6DK" secondAttribute="bottom" id="71P-lt-LFs"/>
+                <constraint firstItem="wd8-2g-F47" firstAttribute="top" secondItem="And-tb-6DK" secondAttribute="top" id="CRC-3y-Ebg"/>
+                <constraint firstItem="swv-zc-ols" firstAttribute="top" secondItem="And-tb-6DK" secondAttribute="top" id="GWS-ZB-bxF"/>
+                <constraint firstAttribute="bottom" secondItem="And-tb-6DK" secondAttribute="bottom" id="VTQ-ft-hR9"/>
+                <constraint firstItem="And-tb-6DK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bTu-di-6Qa"/>
+                <constraint firstItem="BQD-8K-fhu" firstAttribute="top" secondItem="And-tb-6DK" secondAttribute="top" id="cD4-Cp-khT"/>
+                <constraint firstItem="wd8-2g-F47" firstAttribute="leading" secondItem="BQD-8K-fhu" secondAttribute="trailing" constant="4" id="e3W-Kn-ev0"/>
+                <constraint firstItem="BQD-8K-fhu" firstAttribute="bottom" secondItem="And-tb-6DK" secondAttribute="bottom" id="kYe-KV-LaP"/>
+                <constraint firstItem="wd8-2g-F47" firstAttribute="bottom" secondItem="And-tb-6DK" secondAttribute="bottom" id="mxg-ak-3c1"/>
+                <constraint firstAttribute="trailing" secondItem="And-tb-6DK" secondAttribute="trailing" constant="8" id="sCb-Hp-j7C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameLabel" destination="wd8-2g-F47" id="ymm-N2-0nN"/>
+                <outlet property="percentChangeLabel" destination="swv-zc-ols" id="Cln-kM-aDY"/>
+                <outlet property="priceLabel" destination="And-tb-6DK" id="GSI-n6-xdb"/>
+                <outlet property="rankLabel" destination="BQD-8K-fhu" id="gA3-j5-a4y"/>
+            </connections>
+            <point key="canvasLocation" x="-8.6956521739130448" y="-167.07589285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
