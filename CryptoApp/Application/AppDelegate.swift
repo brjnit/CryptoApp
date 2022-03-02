@@ -14,13 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let storyBoard = UIStoryboard(name: "HomeScreen", bundle: nil)
-        guard let vc = storyBoard.instantiateViewController(identifier: "HomeViewController") as? HomeViewController else { return false }
         
-        let repository = MerketService(service: ClientAPI())
-        let usecase = DefaultMarketUsecase(repository: repository)
-        vc.viewModel = CryptoViewModel(usecase: usecase)
-        window?.rootViewController = vc
+        let config = ApiDataNetworkConfig(baseURL: URL(string: "https://api.coincap.io/v2")!)
+        let apiDataNetwork = DefaultNetworkService(config: config)
+        let apiDataTransferService = DefaultDataTransferService(with: apiDataNetwork)
+        
+        let dependencies = ModuleDependencies(apiDataTransferService: apiDataTransferService)
+        let vc = Module(dependencies: dependencies).makeRootViewController()
+        let navigationViewController = UINavigationController(rootViewController: vc)
+        
+        window?.rootViewController = navigationViewController
         window?.makeKeyAndVisible()
         return true
     }

@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		4FE7BA5027C095430021C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA4F27C095430021C8CE /* AppDelegate.swift */; };
-		4FE7BA5227C095430021C8CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA5127C095430021C8CE /* SceneDelegate.swift */; };
-		4FE7BA5427C095430021C8CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA5327C095430021C8CE /* ViewController.swift */; };
-		4FE7BA5727C095430021C8CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BA5527C095430021C8CE /* Main.storyboard */; };
 		4FE7BA5927C0954C0021C8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BA5827C0954C0021C8CE /* Assets.xcassets */; };
 		4FE7BA5C27C0954C0021C8CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BA5A27C0954C0021C8CE /* LaunchScreen.storyboard */; };
-		4FE7BA6727C0954D0021C8CE /* CryptoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA6627C0954D0021C8CE /* CryptoAppTests.swift */; };
 		4FE7BA7227C0954D0021C8CE /* CryptoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA7127C0954D0021C8CE /* CryptoAppUITests.swift */; };
+		4FE7BA8F27C0A4090021C8CE /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BA8E27C0A4090021C8CE /* HomeScreen.storyboard */; };
+		4FE7BA9427C0A4830021C8CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA9327C0A4830021C8CE /* HomeViewController.swift */; };
+		4FE7BA9B27C0A7D20021C8CE /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BA9A27C0A7D20021C8CE /* MarketDataModel.swift */; };
+		4FE7BAA527C0AF650021C8CE /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BAA427C0AF650021C8CE /* CryptoTableViewCell.swift */; };
+		4FE7BAAA27C0B0EE0021C8CE /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BAA927C0B0EE0021C8CE /* CryptoViewModel.swift */; };
+		4FE7BAD827C0E83C0021C8CE /* DefaultMarketRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BAD727C0E83C0021C8CE /* DefaultMarketRepository.swift */; };
+		4FE7BAEC27C0F8A60021C8CE /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BAEB27C0F8A60021C8CE /* APIEndpoints.swift */; };
+		4FE7BB3F27C10A5E0021C8CE /* CryptoTableViewCell.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BAA427C0AF650021C8CE /* CryptoTableViewCell.swift */; };
+		4FE7BB6B27C110EF0021C8CE /* CryptoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BB6A27C110EF0021C8CE /* CryptoTableViewCell.xib */; };
+		4FE7BB7027C12A320021C8CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB6F27C12A320021C8CE /* Constant.swift */; };
+		4FE7BB7927C1337B0021C8CE /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB7827C1337B0021C8CE /* MainFlowCoordinator.swift */; };
+		4FE7BB8127C1353D0021C8CE /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB8027C1353D0021C8CE /* Module.swift */; };
+		4FE7BB8D27C15D710021C8CE /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB8C27C15D710021C8CE /* NetworkConfig.swift */; };
+		4FE7BB9527C15EC10021C8CE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB9427C15EC10021C8CE /* NetworkService.swift */; };
+		4FE7BB9A27C15FA00021C8CE /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB9927C15FA00021C8CE /* DataTransferService.swift */; };
+		4FE7BB9F27C160170021C8CE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BB9E27C160170021C8CE /* Endpoint.swift */; };
+		4FE7BBA427C166D00021C8CE /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBA327C166D00021C8CE /* DIContainer.swift */; };
+		4FE7BBAE27C16E910021C8CE /* MareketUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBAD27C16E910021C8CE /* MareketUsecase.swift */; };
+		4FE7BBB327C16ECA0021C8CE /* MarketRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBB227C16ECA0021C8CE /* MarketRepository.swift */; };
+		4FE7BBC227C17E8A0021C8CE /* String+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBC127C17E8A0021C8CE /* String+Extenstion.swift */; };
+		4FE7BBCC27C24A700021C8CE /* MockDataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBCB27C24A700021C8CE /* MockDataTransferService.swift */; };
+		4FE7BBD127C24E9F0021C8CE /* MarketRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBD027C24E9F0021C8CE /* MarketRepositoryTests.swift */; };
+		4FE7BBD627C257ED0021C8CE /* MarketUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBD527C257ED0021C8CE /* MarketUsecaseTests.swift */; };
+		4FE7BBDB27C258FB0021C8CE /* CryptoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBDA27C258FB0021C8CE /* CryptoViewModelTests.swift */; };
+		4FE7BBE927C2687C0021C8CE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBE827C2687C0021C8CE /* UIViewController+Extension.swift */; };
+		4FE7BBEF27C274450021C8CE /* DefaultDataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BBEE27C274450021C8CE /* DefaultDataTransferService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +59,39 @@
 /* Begin PBXFileReference section */
 		4FE7BA4C27C095430021C8CE /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7BA4F27C095430021C8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FE7BA5127C095430021C8CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FE7BA5327C095430021C8CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4FE7BA5627C095430021C8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE7BA5827C0954C0021C8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE7BA5B27C0954C0021C8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE7BA5D27C0954C0021C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE7BA6227C0954D0021C8CE /* CryptoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FE7BA6627C0954D0021C8CE /* CryptoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppTests.swift; sourceTree = "<group>"; };
 		4FE7BA6827C0954D0021C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE7BA6D27C0954D0021C8CE /* CryptoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7BA7127C0954D0021C8CE /* CryptoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppUITests.swift; sourceTree = "<group>"; };
 		4FE7BA7327C0954D0021C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE7BA8E27C0A4090021C8CE /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		4FE7BA9327C0A4830021C8CE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4FE7BA9A27C0A7D20021C8CE /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
+		4FE7BAA427C0AF650021C8CE /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		4FE7BAA927C0B0EE0021C8CE /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		4FE7BAD727C0E83C0021C8CE /* DefaultMarketRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMarketRepository.swift; sourceTree = "<group>"; };
+		4FE7BAEB27C0F8A60021C8CE /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		4FE7BB6A27C110EF0021C8CE /* CryptoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoTableViewCell.xib; sourceTree = "<group>"; };
+		4FE7BB6F27C12A320021C8CE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4FE7BB7827C1337B0021C8CE /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		4FE7BB8027C1353D0021C8CE /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		4FE7BB8C27C15D710021C8CE /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		4FE7BB9427C15EC10021C8CE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4FE7BB9927C15FA00021C8CE /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		4FE7BB9E27C160170021C8CE /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4FE7BBA327C166D00021C8CE /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		4FE7BBAD27C16E910021C8CE /* MareketUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MareketUsecase.swift; sourceTree = "<group>"; };
+		4FE7BBB227C16ECA0021C8CE /* MarketRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRepository.swift; sourceTree = "<group>"; };
+		4FE7BBC127C17E8A0021C8CE /* String+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extenstion.swift"; sourceTree = "<group>"; };
+		4FE7BBCB27C24A700021C8CE /* MockDataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTransferService.swift; sourceTree = "<group>"; };
+		4FE7BBD027C24E9F0021C8CE /* MarketRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRepositoryTests.swift; sourceTree = "<group>"; };
+		4FE7BBD527C257ED0021C8CE /* MarketUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketUsecaseTests.swift; sourceTree = "<group>"; };
+		4FE7BBDA27C258FB0021C8CE /* CryptoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModelTests.swift; sourceTree = "<group>"; };
+		4FE7BBE827C2687C0021C8CE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4FE7BBEE27C274450021C8CE /* DefaultDataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +142,14 @@
 		4FE7BA4E27C095430021C8CE /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
-				4FE7BA4F27C095430021C8CE /* AppDelegate.swift */,
-				4FE7BA5127C095430021C8CE /* SceneDelegate.swift */,
-				4FE7BA5327C095430021C8CE /* ViewController.swift */,
-				4FE7BA5527C095430021C8CE /* Main.storyboard */,
+				4FE7BBED27C273EC0021C8CE /* Networking */,
+				4FE7BBC027C17E670021C8CE /* Common */,
+				4FE7BB8B27C14FBD0021C8CE /* Presentation */,
+				4FE7BB8727C14F500021C8CE /* Data */,
+				4FE7BA9827C0A7190021C8CE /* Domain */,
+				4FE7BB8527C14EF90021C8CE /* Infrastructure */,
+				4FE7BB7727C132FA0021C8CE /* Application */,
 				4FE7BA5827C0954C0021C8CE /* Assets.xcassets */,
-				4FE7BA5A27C0954C0021C8CE /* LaunchScreen.storyboard */,
 				4FE7BA5D27C0954C0021C8CE /* Info.plist */,
 			);
 			path = CryptoApp;
@@ -113,8 +158,11 @@
 		4FE7BA6527C0954D0021C8CE /* CryptoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4FE7BA6627C0954D0021C8CE /* CryptoAppTests.swift */,
 				4FE7BA6827C0954D0021C8CE /* Info.plist */,
+				4FE7BBCB27C24A700021C8CE /* MockDataTransferService.swift */,
+				4FE7BBD027C24E9F0021C8CE /* MarketRepositoryTests.swift */,
+				4FE7BBD527C257ED0021C8CE /* MarketUsecaseTests.swift */,
+				4FE7BBDA27C258FB0021C8CE /* CryptoViewModelTests.swift */,
 			);
 			path = CryptoAppTests;
 			sourceTree = "<group>";
@@ -126,6 +174,150 @@
 				4FE7BA7327C0954D0021C8CE /* Info.plist */,
 			);
 			path = CryptoAppUITests;
+			sourceTree = "<group>";
+		};
+		4FE7BA9827C0A7190021C8CE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BA9927C0A76F0021C8CE /* Entities */,
+				4FE7BBA827C16DE40021C8CE /* Interface */,
+				4FE7BB8A27C14F9B0021C8CE /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4FE7BA9927C0A76F0021C8CE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BA9A27C0A7D20021C8CE /* MarketDataModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4FE7BAA227C0AEEA0021C8CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BA9327C0A4830021C8CE /* HomeViewController.swift */,
+				4FE7BA8E27C0A4090021C8CE /* HomeScreen.storyboard */,
+				4FE7BAA427C0AF650021C8CE /* CryptoTableViewCell.swift */,
+				4FE7BB6A27C110EF0021C8CE /* CryptoTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FE7BAA327C0AEF70021C8CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BAA927C0B0EE0021C8CE /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FE7BAEA27C0F87A0021C8CE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BAEB27C0F8A60021C8CE /* APIEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4FE7BB7727C132FA0021C8CE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BA5A27C0954C0021C8CE /* LaunchScreen.storyboard */,
+				4FE7BA4F27C095430021C8CE /* AppDelegate.swift */,
+				4FE7BB7827C1337B0021C8CE /* MainFlowCoordinator.swift */,
+				4FE7BB8027C1353D0021C8CE /* Module.swift */,
+				4FE7BBA327C166D00021C8CE /* DIContainer.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4FE7BB8527C14EF90021C8CE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BB8627C14F150021C8CE /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		4FE7BB8627C14F150021C8CE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BB8C27C15D710021C8CE /* NetworkConfig.swift */,
+				4FE7BB9427C15EC10021C8CE /* NetworkService.swift */,
+				4FE7BBEE27C274450021C8CE /* DefaultDataTransferService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4FE7BB8727C14F500021C8CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BAEA27C0F87A0021C8CE /* Network */,
+				4FE7BB8827C14F6C0021C8CE /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4FE7BB8827C14F6C0021C8CE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BAD727C0E83C0021C8CE /* DefaultMarketRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4FE7BB8A27C14F9B0021C8CE /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BBAD27C16E910021C8CE /* MareketUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		4FE7BB8B27C14FBD0021C8CE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BAA227C0AEEA0021C8CE /* View */,
+				4FE7BAA327C0AEF70021C8CE /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4FE7BBA827C16DE40021C8CE /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BBA927C16E000021C8CE /* Repository */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		4FE7BBA927C16E000021C8CE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BBB227C16ECA0021C8CE /* MarketRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4FE7BBC027C17E670021C8CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BB6F27C12A320021C8CE /* Constant.swift */,
+				4FE7BBC127C17E8A0021C8CE /* String+Extenstion.swift */,
+				4FE7BBE827C2687C0021C8CE /* UIViewController+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4FE7BBED27C273EC0021C8CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7BB9927C15FA00021C8CE /* DataTransferService.swift */,
+				4FE7BB9E27C160170021C8CE /* Endpoint.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +423,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE7BB3F27C10A5E0021C8CE /* CryptoTableViewCell.swift in Resources */,
+				4FE7BA8F27C0A4090021C8CE /* HomeScreen.storyboard in Resources */,
 				4FE7BA5C27C0954C0021C8CE /* LaunchScreen.storyboard in Resources */,
+				4FE7BB6B27C110EF0021C8CE /* CryptoTableViewCell.xib in Resources */,
 				4FE7BA5927C0954C0021C8CE /* Assets.xcassets in Resources */,
-				4FE7BA5727C095430021C8CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +452,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE7BA5427C095430021C8CE /* ViewController.swift in Sources */,
+				4FE7BBEF27C274450021C8CE /* DefaultDataTransferService.swift in Sources */,
+				4FE7BBAE27C16E910021C8CE /* MareketUsecase.swift in Sources */,
+				4FE7BB9A27C15FA00021C8CE /* DataTransferService.swift in Sources */,
+				4FE7BAD827C0E83C0021C8CE /* DefaultMarketRepository.swift in Sources */,
+				4FE7BAA527C0AF650021C8CE /* CryptoTableViewCell.swift in Sources */,
+				4FE7BB8D27C15D710021C8CE /* NetworkConfig.swift in Sources */,
+				4FE7BB9F27C160170021C8CE /* Endpoint.swift in Sources */,
+				4FE7BB7027C12A320021C8CE /* Constant.swift in Sources */,
+				4FE7BB7927C1337B0021C8CE /* MainFlowCoordinator.swift in Sources */,
+				4FE7BBE927C2687C0021C8CE /* UIViewController+Extension.swift in Sources */,
+				4FE7BAEC27C0F8A60021C8CE /* APIEndpoints.swift in Sources */,
 				4FE7BA5027C095430021C8CE /* AppDelegate.swift in Sources */,
-				4FE7BA5227C095430021C8CE /* SceneDelegate.swift in Sources */,
+				4FE7BA9B27C0A7D20021C8CE /* MarketDataModel.swift in Sources */,
+				4FE7BA9427C0A4830021C8CE /* HomeViewController.swift in Sources */,
+				4FE7BBA427C166D00021C8CE /* DIContainer.swift in Sources */,
+				4FE7BB8127C1353D0021C8CE /* Module.swift in Sources */,
+				4FE7BBB327C16ECA0021C8CE /* MarketRepository.swift in Sources */,
+				4FE7BB9527C15EC10021C8CE /* NetworkService.swift in Sources */,
+				4FE7BAAA27C0B0EE0021C8CE /* CryptoViewModel.swift in Sources */,
+				4FE7BBC227C17E8A0021C8CE /* String+Extenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +479,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE7BA6727C0954D0021C8CE /* CryptoAppTests.swift in Sources */,
+				4FE7BBDB27C258FB0021C8CE /* CryptoViewModelTests.swift in Sources */,
+				4FE7BBD127C24E9F0021C8CE /* MarketRepositoryTests.swift in Sources */,
+				4FE7BBCC27C24A700021C8CE /* MockDataTransferService.swift in Sources */,
+				4FE7BBD627C257ED0021C8CE /* MarketUsecaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +510,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4FE7BA5527C095430021C8CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FE7BA5627C095430021C8CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4FE7BA5A27C0954C0021C8CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

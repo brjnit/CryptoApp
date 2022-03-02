@@ -17,5 +17,5 @@ struct CryptoCurrency: Codable {
     let symbol: String
     let name: String
     let priceUsd: String
-    let changePercent24Hr: String
+    let chnagePercent24Hr: String
 }

@@ -23,16 +23,17 @@ class CryptoTableViewCell: UITableViewCell {
     }
     
     func configureCell(model: CryptoCellModel) {
+        self.backgroundColor = .black
         rankLabel.text = model.rank
         nameLabel.text = model.name
-        percentChangeLabel.text = model.percentChange
-        priceLabel.text = model.price
+        percentChangeLabel.attributedText = model.percentChange
+        priceLabel.attributedText = model.price
     }
 }
 
 struct CryptoCellModel {
     let rank: String
     let name: String
-    let percentChange: String
-    let price: String
+    let percentChange: NSAttributedString
+    let price: NSAttributedString
 }

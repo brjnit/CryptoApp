@@ -7,27 +7,18 @@
 
 import Foundation
 
-//public enum DataTransferError: Error {
-//    case serverError
-//    case connectionError
-//    case badRequest
-//    case noContent
-//
-//    func errorMessage() -> String {
-//        switch self {
-//        case .serverError: return "Recived server error"
-//        case .connectionError: return "Recived connection error"
-//        case .badRequest: return "bad request"
-//        case .noContent: return "no data content"
-//        }
-//    }
-//}
-
 public enum DataTransferError: Error {
     case noResponse
-    case parsing(Error)
-    case networkFailure(NetworkError)
-    case resolvedNetworkFailure(Error)
+    case invalidJson
+    case serverError
+    
+    func errorMessage() -> String {
+            switch self {
+            case .noResponse: return "Not valid data"
+            case .serverError: return "Recived server error"
+            case .invalidJson: return "Not a valid JSON format"
+            }
+        }
 }
 
 public protocol DataTransferService {

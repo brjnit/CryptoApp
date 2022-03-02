@@ -6,27 +6,47 @@
 //
 
 import XCTest
+@testable import CryptoApp
+
 
 class MarketUsecaseTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testGetMarketDataSuccess() {
+        let sut = makeSUT(with: .success(stubMarketData()))
+        let expectation = self.expectation(description: "get market data model")
+        var marketData: MarketDataModel?
+        
+        _ = sut.fetchMarketData{ result in
+            switch result {
+            case .success(let response): marketData = response
+            case .failure(_): XCTFail("should return market data")
+            }
+            expectation.fulfill()
         }
+        
+        waitForExpectations(timeout: 2, handler: nil)
+        XCTAssertEqual(marketData?.data[0].id, "bitcoin")
     }
-
+    
+    func testGetMarketDataFailure() {
+        let sut = makeSUT(with: .failure(.noResponse))
+        let expectation = self.expectation(description: "get market Api fail")
+        var error: Error?
+        
+        _ = sut.fetchMarketData{ result in
+            switch result {
+            case .success( _): XCTFail("should not return market data")
+            case .failure(let serverError): error = serverError
+            }
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 2, handler: nil)
+        XCTAssertNotNil(error)
+    }
+    
+    private func makeSUT(with result: Result<MarketDataModel,DataTransferError>?) -> MarketUsecase {
+        let repository = DefaultMarketRepository(service: MockDataTransferService<MarketDataModel>(with: result))
+        return DefaultMarketUsecase(repository: repository)
+    }
 }

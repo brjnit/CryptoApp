@@ -15,41 +15,41 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQD-8K-fhu">
-                    <rect key="frame" x="8" y="0.0" width="12" height="145"/>
+                    <rect key="frame" x="8" y="0.0" width="24" height="145"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="12" id="VOY-Le-dyc"/>
+                        <constraint firstAttribute="width" constant="24" id="VOY-Le-dyc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" systemColor="systemGray2Color"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swv-zc-ols">
-                    <rect key="frame" x="476" y="0.0" width="64" height="145"/>
+                    <rect key="frame" x="442" y="0.0" width="72" height="145"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="64" id="RYG-BN-8gN"/>
+                        <constraint firstAttribute="width" constant="72" id="RYG-BN-8gN"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-2g-F47">
-                    <rect key="frame" x="24" y="0.0" width="448" height="145"/>
+                    <rect key="frame" x="36" y="0.0" width="402" height="145"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="And-tb-6DK">
-                    <rect key="frame" x="544" y="0.0" width="64" height="145"/>
+                    <rect key="frame" x="518" y="0.0" width="90" height="145"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="64" id="AAl-1g-EfP"/>
+                        <constraint firstAttribute="width" constant="90" id="AAl-1g-EfP"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="And-tb-6DK" firstAttribute="leading" secondItem="swv-zc-ols" secondAttribute="trailing" constant="4" id="2n0-2k-Qt5"/>
                 <constraint firstItem="swv-zc-ols" firstAttribute="leading" secondItem="wd8-2g-F47" secondAttribute="trailing" constant="4" id="2sA-bc-2aH"/>
@@ -76,8 +76,8 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
